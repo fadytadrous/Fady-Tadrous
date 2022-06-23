@@ -2,16 +2,10 @@
 
 ## Headers
 
-# This is a Heading h1
-## This is a Heading h2 
-###### This is a Heading h6
-
-## Emphasis
 
 
 _You **can** combine them_
 
-## Lists
 
 ### Unordered
 
@@ -24,23 +18,10 @@ _You **can** combine them_
 
 1. Item 1
 1. Item 2
-1. Item 3
-  1. Item 3a
-  1. Item 3b
-
-## Images
-
-![This is a alt text.](/image/sample.png "This is a sample image.")
 
 ## Links
 
 You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
-
-## Blockquotes
-
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 
 ## Test Cases
 
@@ -53,7 +34,7 @@ You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
 |5|Verify related keywords added to the search result or not.|right baz     |
 |6|Verify auto suggestion shown on adding a keyword or not.|right baz     |
 |7|Verify search icon is present on the field.|right baz     |
-|4|Verify an error message should display for blank input.|right baz     |
+|8|Verify an error message display by entering invalid keywords in the search field and clicking the search button|right baz     |
 |4|Verify an error message should display for blank input.|right baz     |
 |4|Verify an error message should display for blank input.|right baz     |
 |4|Verify an error message should display for blank input.|right baz     |
