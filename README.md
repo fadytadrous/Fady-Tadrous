@@ -2,10 +2,7 @@
 
 ## Headers
 
-
-
 _You **can** combine them_
-
 
 ### Unordered
 
@@ -39,15 +36,11 @@ You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
 |4|Verify an error message should display for blank input.|right baz     |
 |4|Verify an error message should display for blank input.|right baz     |
 
-
-
-
 | Tables   |      Are      |  Cool |
 |----------|:-------------:|------:|
 | col 1 is |  centered mmmmmm| $1600 |
 | col 2 is |    xs   |   $12 |
 | col 3 is | right-aligned |    $1 |
-    
 
 ```
 let message = 'Hello world';
