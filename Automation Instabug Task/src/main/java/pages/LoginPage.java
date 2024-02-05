@@ -7,12 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
+    private WebDriver driver;
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
 
     }
-    WebDriver driver;
 
     @FindBy(id = "user-name")
     public WebElement username;
@@ -22,4 +23,28 @@ public class LoginPage {
 
     @FindBy(id = "login-button")
     public WebElement loginBtn;
+
+    @FindBy(css = "h3")
+    public WebElement errorMsg;
+
+    public ProductsPage loginBtnClick(){
+        loginBtn.click();
+        return new ProductsPage(driver);
+    }
+
+    public void setUsername(String name) {
+        username.clear();
+        username.sendKeys(name);
+    }
+
+    public void setPassword(String pass) {
+        password.clear();
+        password.sendKeys(pass);
+    }
+
+    public String readErrorText(){
+       return errorMsg.getText();
+    }
+
+
 }
