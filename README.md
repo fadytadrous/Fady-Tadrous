@@ -1,52 +1,84 @@
-# Test Cases
+## Test Cases for Login Page
 
-## Headers
+### Valid Credentials Login Test
 
-_You **can** combine them_
+### Preconditions:
+- Ensure the user has valid credentials (username and password).
 
-### Unordered
+#### Test Steps:
+1. Navigate to the login page.
+2. Enter valid username and password.
+3. Click on the login button.
 
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
+#### Expected Result:
+* Verify that the user is successfully logged in and redirected to the expected products page.
 
-### Ordered
+---
 
-1. Item 1
-1. Item 2
+### Invalid Credentials Login Test
 
-## Links
+#### Preconditions:
+- Ensure the user has invalid credentials.
 
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+#### Test Steps:
+1. Navigate to the login page.
+2. Enter invalid username and/or password.
+3. Click on the login button.
 
-## Test Cases
+#### Expected Result:
+* an error message is displayed indicating invalid credentials.
+* the user is not logged in and remains on the login page.
 
-| No. | Name |Steps|Expected Results|Preconditions|Test Data|Priority|
-|--|:------------------------:|------|:------:|:------:|:----:|:----:|
-|1|Verify search working by adding keyword and pressing the Enter key from the keyboard.||
-|2 | Verify the search field present and aligned.||
-|3|Verify search working by adding keyword and on click on the search button.|right baz     |
-|4|Verify an error message should display for blank input.|right baz     |
-|5|Verify related keywords added to the search result or not.|right baz     |
-|6|Verify auto suggestion shown on adding a keyword or not.|right baz     |
-|7|Verify search icon is present on the field.|right baz     |
-|8|Verify an error message display by entering invalid keywords in the search field and clicking the search button|right baz     |
-|4|Verify an error message should display for blank input.|right baz     |
-|4|Verify an error message should display for blank input.|right baz     |
-|4|Verify an error message should display for blank input.|right baz     |
+---
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  centered mmmmmm| $1600 |
-| col 2 is |    xs   |   $12 |
-| col 3 is | right-aligned |    $1 |
+### Locked out Credentials Login Test
 
-```
-let message = 'Hello world';
-alert(message);
-```
+#### Preconditions:
+- Ensure the user has locked out user credentials.
 
-## Inline code
+#### Test Steps:
+1. Navigate to the login page.
+2. Enter locked out username and password.
+3. Click on the login button.
 
-This web site is using `markedjs/marked`.
+#### Expected Result:
+* an error message is displayed indicating locked out credentials.
+* the user is not logged in and remains on the login page.
+
+---
+
+### Blank Credentials Login Test
+
+#### Test Steps:
+1. Navigate to the login page.
+2. Leave both username and password fields blank.
+3. Click on the login button.
+
+#### Expected Result:
+* an error message is displayed indicating required fields are empty.
+
+---
+
+### Blank Username Login Test
+
+#### Test Steps:
+1. Navigate to the login page.
+2. Leave username blank and enter password field.
+3. Click on the login button.
+
+#### Expected Result:
+* an error message is displayed indicating required field is empty.
+
+---
+
+### Blank Password Login Test
+
+#### Test Steps:
+1. Navigate to the login page.
+2. Leave password blank and enter username field.
+3. Click on the login button.
+
+#### Expected Result:
+* an error message is displayed indicating required field is empty.
+
+---
