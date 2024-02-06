@@ -13,7 +13,7 @@
 |7|Search Task|Tasks containing the search query in their title or description should be displayed only. |At least one task should exist in the   list.||2|
 |8|Filter Task using priority|Tasks containing the priority query in their title or description should be displayed only. |At least one task should exist in the   list.||2|
 |9|Edit Profile|Profile should be updated with the new change (updated photo and name)    |User should be logged in ||3|
-|10|Add new tag to a task| New tag will be added and can be used for filtering the tagged task|
+|10|Add new tag to a task| New tag will be added and can be used for filtering the tagged task|||2|
 |11|Check inserting same tag|Error will be displayed for repition |||3|
 |12|Add task with reminder in the past|No reminder will occur |||2|
 |13|Add task with reminder now| reminder will occur |||2|
