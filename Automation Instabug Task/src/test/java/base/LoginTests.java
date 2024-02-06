@@ -32,6 +32,33 @@ public class LoginTests extends base{
         assertTrue(loginPage.readErrorText().contains("Username and password do not match any user in this service"),
                 "Error message for invalid username and password is correct");
     }
+    @Test(priority=5)
+    public void testEmptyUsernameAndEmptyPassLogin(){
+
+        loginPage.setUsername("");
+        loginPage.setPassword("");
+        loginPage.loginBtn.click();
+        assertTrue(loginPage.readErrorText().contains("Username is required"),
+                "Error message for invalid username and password is correct");
+    }
+    @Test(priority=6)
+    public void testValidUsernameAndEmptyPassLogin(){
+
+        loginPage.setUsername("standard_user");
+        loginPage.setPassword("");
+        loginPage.loginBtn.click();
+        assertTrue(loginPage.readErrorText().contains("Password is required"),
+                "Error message for invalid username and password is correct");
+    }
+    @Test(priority=7)
+    public void testEmptyUsernameAndValidPassLogin(){
+
+        loginPage.setUsername("");
+        loginPage.setPassword("secret_sauce");
+        loginPage.loginBtn.click();
+        assertTrue(loginPage.readErrorText().contains("Username is required"),
+                "Error message for invalid username and password is correct");
+    }
 
     @Test(priority = 3)
     public void testInvalidUsernameAndValidPassLogin(){
