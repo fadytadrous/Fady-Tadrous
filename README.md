@@ -35,7 +35,7 @@
 
 ### Valid Credentials Login Test
 
-### Preconditions:
+#### Preconditions:
 - Ensure the user has valid credentials (username and password).
 
 #### Test Steps:
