@@ -9,9 +9,8 @@ import static org.testng.Assert.*;
 
 public class LoginTests extends base{
 
-    //create page object for login page
 
-    @Test(priority = 10)
+    @Test(priority = 8)
     public void testSuccessfullLogin(){
  
         loginPage.setUsername("standard_user");
